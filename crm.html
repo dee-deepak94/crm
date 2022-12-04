@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM-GET YOUR DATA</title>
+    <link rel="stylesheet" href="crm.css">
+</head>
+
+<body>
+    <div class="main_body">
+        <div class="body_left">
+            <div class="leftContent">
+                <h1>Welcome Back</h1>
+                <h6>Welcome back! Please enter your details</h6>
+                <div class="fieldValue">
+                    <div class="inputField">
+                        <label for="">Id</label>
+                        <input type="text" id="id" placeholder="Enter your ID">
+                    </div>
+
+                    <div class="inputField">
+                        <label for="">Name</label>
+                        <input type="text" id="Name" placeholder="Enter your Name">
+                    </div>
+                    <div class="inputField">
+                        <label for="">Email</label>
+                        <input type="text" id="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="inputField">
+                        <label for="">Address</label>
+                        <input type="text" id="address" placeholder="Enter your Address">
+                    </div>
+                    <div class="inputField">
+                        <label for="">Phone No.</label>
+                        <input type="text" id="phone" placeholder="Enter your Phone No.">
+                    </div>
+                </div>
+                <div class="buttonField">
+                    <div class="button">
+                        <button onclick="handleAdd()" type="button">ADD</button>
+                        <button onclick="handleDelete()" type="button">DELETE</button>
+                        <button onclick="handleSearch()" type="button">SEARCH</button>
+                        <button onclick="handleModify()" type="button">MODIFY</button>
+                    </div>
+                    <div class="button">
+                        <button type="button">FIRST</button>
+                        <button type="button">PREVIOUS</button>
+                        <button type="button">NEXT</button>
+                        <button type="button">LAST</button>
+                    </div>
+                    <button type="button">Show All Customer</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="body_right">
+            <div class="tableSection">
+                <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone No.</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="customer-list">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="crm.js"></script>
+</body>
+
+</html>
